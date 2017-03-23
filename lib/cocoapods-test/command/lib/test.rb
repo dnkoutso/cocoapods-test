@@ -17,7 +17,7 @@ module Pod
         end
 
         def initialize(argv)
-          @source_urls = argv.option('sources', 'https://github.com/CocoaPods/Specs.git').split(',')
+          @source_urls = argv.option('sources', Config.instance.sources_manager.all.map(&:url).join(',')).split(',')
           @podspecs_paths = argv.arguments!
           super
         end
