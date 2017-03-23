@@ -5,7 +5,7 @@ gemspec
 
 group :development do
   gem 'cocoapods'
-  gem 'cocoapods-core', :git => 'https://github.com/CocoaPods/Core', :branch => 'testspec'
+  gem 'cocoapods-core', :git => 'https://github.com/dnkoutso/Core', :branch => 'test_spec_dsl'
   gem 'bacon'
 end
 
